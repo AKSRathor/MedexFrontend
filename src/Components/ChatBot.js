@@ -23,8 +23,7 @@ const systemMessage = {
     "Explain things like you're talking to a software professional with 2 years of experience.",
 };
 
-const API_KEY = "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";
-
+const API_KEY = process.env.api_key
 const Chatbot = () => {
     const [chatBtn, setChatBtn] = useState(false)
 const chatBox = useRef()
