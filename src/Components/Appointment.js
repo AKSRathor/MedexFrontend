@@ -22,7 +22,7 @@ import Footer from './Footer'
 //   },
 
 // ]
-const host = "http://localhost:5000"
+const host = "https://medexbackend.onrender.com"
 const Appointment = () => {
 
   const [appData, setAppData] = useState([{name:"", email:"", doctorName:"", problemDesc:"", date:""}])
