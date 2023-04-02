@@ -7,27 +7,27 @@ const ClientSectionBilling = () => {
 
 
     const billingsArr = [{
-        CheckupCost: "200",
-        totalMedicinesCost: "4000",
+        CheckupCost: "200 Rs",
+        totalMedicinesCost: "4000 Rs",
         medicines: [
-            ["Probuphine", "300"],
-            ["Rybelsus", "500"],
-            ["secukinumab", "1000"],
-            ["Sublocade", "1200"]
+            ["Probuphine", "300mg"],
+            ["Rybelsus", "500mg"],
+            ["secukinumab", "1000mg"],
+            ["Sublocade", "1200mg"]
         ],
-        TotalCost: "4200"
+        TotalCost: "4200 Rs"
 
     },
     {
-        CheckupCost: "500",
-        totalMedicinesCost: "3000",
+        CheckupCost: "500 Rs",
+        totalMedicinesCost: "3000 Rs",
         medicines: [
-            ["Amitriptyline", "300"],
-            ["Amlodipine", "500"],
-            ["Amoxicillin", "1000"],
-            ["Ativan", "200"]
+            ["Amitriptyline", "300mg"],
+            ["Amlodipine", "500mg"],
+            ["Amoxicillin", "1000mg"],
+            ["Ativan", "200mg"]
         ],
-        TotalCost: "3500"
+        TotalCost: "3500 Rs"
 
     },
 
@@ -36,8 +36,8 @@ const ClientSectionBilling = () => {
         <>
 
 
-            <div className='BillSection' style={{ backgroundColor: "#EDF1FD" }}>
-                <h1 style={{ textAlign: "center", padding: "20% 0% 0% 0%", color: "#3c3b58" }}>Bill History</h1>
+            <div className='BillSection'>
+                <h1 style={{ textAlign: "center", padding: "0% 0% 0% 0%",fontSize: "45px", color: "#3c3b58" }}>Bill History</h1>
                 {billingsArr.map((i) => {
                     return <BillSectionCard i={i} checkupCost={i.CheckupCost} totalMedCost={i.totalMedicinesCost}
                         allMed={i.medicines} totCost={i.TotalCost} />

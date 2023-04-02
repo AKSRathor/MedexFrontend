@@ -19,6 +19,7 @@ import {
 // dotenv.config();
 
 
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 
 const systemMessage = {
@@ -30,13 +31,11 @@ const systemMessage = {
 
 // const API_KEY = process.env.API_KEY;
 // console.log(API_KEY)
-// const API_KEY = "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";
 
-const Chatbot = () => {const API_KEY = process.env.API_KEY;
-    console.log(API_KEY)
+
+const Chatbot = () => {
     const [chatBtn, setChatBtn] = useState(false)
     const chatBox = useRef()
-    // function App() {
     const [messages, setMessages] = useState([
         {
             message: "Hello, Welcome to MedEx, ask your query!",
@@ -93,7 +92,7 @@ const Chatbot = () => {const API_KEY = process.env.API_KEY;
         await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
             headers: {
-                Authorization: "Bearer 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" ,
+                Authorization: "Bearer "+ API_KEY ,
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(apiRequestBody),
@@ -131,12 +130,21 @@ const Chatbot = () => {const API_KEY = process.env.API_KEY;
 
     const handleOnChat = () => {
         if (!chatBtn) {
-            chatBox.current.style.transform = "scale(1)"
+            chatBox.current.style.display = "block"
+            setTimeout(() => {
+                chatBox.current.style.transform = "scale(1)"
+                
+            }, 50);
             chatBox.current.style.transition = "all 0.2s ease-out"
+            chatBox.current.style.display = "all 0.2s ease-out"
             setChatBtn(true)
         }
         else {
             chatBox.current.style.transform = "scale(0)"
+            setTimeout(() => {
+                chatBox.current.style.display = "none"
+                
+            }, 50);
             setChatBtn(false)
         }
     }

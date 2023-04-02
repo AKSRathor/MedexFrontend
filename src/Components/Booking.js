@@ -130,6 +130,7 @@ const Booking = () => {
                   id="problem"
                   name="problemDesc"
                   // value={date}
+                  placeholder="Describe your problem"
                   required
                   onChange={handleOnChange}
                 />

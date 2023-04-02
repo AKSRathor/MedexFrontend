@@ -45,7 +45,7 @@
     margin: 5% auto;
     border-radius: 20px;
     padding: 2%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     color: #333;
     font-weight: 500;
 }
@@ -69,4 +69,8 @@
 .BillingCardGap{
     width: 90%;
     /* margin: auto; */
+}
+
+.BillSection{
+    background: linear-gradient(#c9c7f3 , #fff);
 }

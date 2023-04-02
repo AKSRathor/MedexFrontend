@@ -1,10 +1,16 @@
 import React from 'react'
 import "./Style/Client.css"
 import profileImg from "./stock/ProfileImg.jpg"
+import borderDesign from "./stock/borderDesign.png"
+import borderDesignLeft from "./stock/borderDesignLeft.png"
+import circle from "./stock/circle.png"
 import Sidebar from './Sidebar'
 import Footer from './Footer'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const ClientSection = () => {
+    let history = useNavigate()
     const personalInfo = {
         Name: "Keshav",
         Age: "32",
@@ -21,12 +27,26 @@ const ClientSection = () => {
             Place: "Dwarka Mor"
         }
     }
+    useEffect(() => {
+          if(localStorage.getItem('emailHack')){
+      
+          }
+          else{
+            history("/login")
+          }
+        
+          return () => {
+            
+          }
+        }, [])
 
-    return (<div style={{ backgroundColor: "#EDF1FD", height: "100vh", position: "absolute", top: "0" }}>
+    return (<div style={{ backgroundColor: "#EDF1FD", position: "absolute", top: "0" }}>
                 <Sidebar />
 
-
-                <div id="personalInfo" style={{ backgroundColor: "white", borderRadius: "15px" }}>
+                <img src={borderDesign} id="clientimg1"></img>
+                <img src={borderDesignLeft} id="clientimg2"></img>
+                <img src={circle} id="clientimg3"></img>
+                <div id="personalInfo" style={{  borderRadius: "15px" }}>
                     <div className="upperCardPersonalInfo" style={{ paddingLeft: "5%" }} >
                         <img id='prfImg' src={profileImg} alt="" />
                         <div id='upperRightCardDiv' style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>

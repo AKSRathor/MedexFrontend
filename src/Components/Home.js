@@ -26,18 +26,18 @@ import HomePageCards from './HomePageCards';
 
 const Home = () => {
   let history = useNavigate()
-  useEffect(() => {
-    if(localStorage.getItem('emailHack')){
+  // useEffect(() => {
+  //   if(localStorage.getItem('emailHack')){
 
-    }
-    else{
-      history("/login")
-    }
+  //   }
+  //   else{
+  //     history("/login")
+  //   }
   
-    return () => {
+  //   return () => {
       
-    }
-  }, [])
+  //   }
+  // }, [])
   
   return (
     <div id='HomePage'>

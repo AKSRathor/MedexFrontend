@@ -16,17 +16,12 @@ const PrescriptionCard = (props) => {
 
         </div>
         <hr style={{margin:"2%"}} />
-        <div className="medicalInteraction presDiv" style={{padding:"1%"}}>
-          <div className="AskedPrescription">Medical Interactions</div>{props.medInterac}
+        <div className="medicalInteraction presDiv" style={{padding:"1%" , fontWeight:"700"}}>Note : 
+          {props.medInterac}
         </div>
-        <div className="provCommMobile presDiv">
-          <div className="AskedPrescription">Contact: </div>{props.provCommMobile}
-        </div>
-        <div className="provCommEmail presDiv">
-          <div className="AskedPrescription">Email:   </div>{props.provCommEmail}
-        </div>
+       
     </div>
   )
 }
 
-export default PrescriptionCard
+export default PrescriptionCard;

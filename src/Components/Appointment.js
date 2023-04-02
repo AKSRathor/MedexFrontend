@@ -59,7 +59,7 @@ const Appointment = () => {
 
 return (
 
-  <div className='bookSpace' style={{ display: "flex", flexWrap: "wrap", flexDirection: "column", justifyContent: "center",marginBottom:"5%"}}>
+  <div className='bookSpace' style={{ display: "flex", flexWrap: "wrap", flexDirection: "column", justifyContent: "center", paddingBottom:"5%"}}>
     <Sidebar/>
     <h1 className='bookSpaceHead' style={{textAlign:"center"}}>Your Bookings</h1>
     {/* <Sidebar />

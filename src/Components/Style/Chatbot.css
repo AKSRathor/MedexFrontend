@@ -18,6 +18,7 @@
 .inDiv{
     /* display: none; */
     transform: scale(0);
+    display: none;
     transform-origin: 95% 95%;
 }
 
