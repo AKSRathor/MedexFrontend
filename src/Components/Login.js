@@ -37,7 +37,7 @@ function Login() {
       setErrorMsg('')
       navigate("/");
       localStorage.setItem('emailHack', email)
-      localStorage.setItem('nameHack', name)
+      localStorage.setItem('nameHack', "name")
       console.log(user);
     })
     .catch((err) =>{
