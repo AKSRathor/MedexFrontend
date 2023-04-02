@@ -1,0 +1,86 @@
+#personalInfo{
+    margin: 15%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#prfImg{
+    width: 15%;
+}
+
+.upperCardPersonalInfo{
+    padding-left: 7%;
+    display: flex;
+}
+
+
+#prfImg{
+    width: 19%;
+    margin: 5%;
+    border-radius: 127px;
+}
+
+#personalInfoName, #personalInfoOccupation, #personalInfoAddress{
+    padding: 5%;
+    font-weight: bold;
+}
+
+#personalInfoName{
+    color: #6D6D99;
+}
+
+#personalInfoOccupation{
+
+    color:#6890F3;
+}
+
+#personalInfoAddress{
+    color: #6B779A;
+
+}
+.infoProvided{
+    display: flex;
+    height: 7vh;
+}
+
+.profileGiveGap {
+    /* margin: 2% 54%; */
+    position: absolute;
+    left: 42%;
+}
+.infoProvided label {
+    width: 25%;
+    padding: 0 6%;
+}
+
+#writtenPersonalInfo{
+    color: #7C82A2;
+}
+
+@media only screen and (max-width: 800px) {
+    #personalInfo {
+        margin: 27% 5%;
+        font-size: 0.8em;
+        height: 70vh;
+    }
+
+    #prfImg {
+        width: 30%;
+    }
+    #personalInfo {
+        margin: 27% 5%;
+        font-size: 0.8em;
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    #personalInfo {
+        margin: 41% 7%;
+        font-size: 0.8em;
+        height: 70vh;
+    }
+    #prfImg {
+        width: 38%;
+    }
+}
