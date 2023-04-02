@@ -20,7 +20,7 @@ const Booking = () => {
     console.log(bookData)
   }
 
-  const host = "http://localhost:5000"
+  const host = "https://medexbackend.onrender.com"
   const handleSubmit = async (e) => {
     e.preventDefault();
 
